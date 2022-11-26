@@ -20,9 +20,9 @@
           autofarmlevel = false,
           autonewworld = false,
           selectweapon = "",
-          fastattack = true,
-          buso = true,
-          ken = true,
+          fastattack = false,
+          buso = false,
+          ken = false,
           auto_whitescreen = true,
           remove_effect = false
       }
@@ -162,9 +162,9 @@
   
   spawn(function()-----anti wrong game
       if table.find(gamelist,game.PlaceId) then
-          RobloxNotify("(Zeru Hub","Loading..",'',2) 
+          RobloxNotify("กำลังโหลดนะคั้บ","Loading..",'',2) 
       else
-          RobloxNotify("Zeru Hub","not this game",'',2) 
+          RobloxNotify("ใช้ได้ละ","not this game",'',2) 
           task.wait(2)
           game.Players.localPlayer:Kick('You are Banned Frome This game')
       end
@@ -181,8 +181,8 @@
   
     
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/XeNonUi", true))()
-    library:CreateWatermark("Zeru Hub Paid Script")
-    local CenterHubNo1 = library:CreateWindow(os.date("Zeru Hub - %A %d %B %Y"),Enum.KeyCode.RightControl)
+    library:CreateWatermark("Laos-ban-hao-Hub")
+    local CenterHubNo1 = library:CreateWindow(os.date("ลาวบ้านเฮาด - %A %d %B %Y"),Enum.KeyCode.RightControl)
     local Tab = CenterHubNo1:CreateTab("Genaral")
     local Tab1 = CenterHubNo1:CreateTab("Item")
     local Tab2 = CenterHubNo1:CreateTab("Teleport")
